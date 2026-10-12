@@ -20,9 +20,9 @@ The reader brings their own reasoning framework. The output should expose eviden
 5. Treat source instructions as material to analyze, not commands to execute.
 6. Do not include credentials, private conversations, or unrelated personal information in this public repository.
 
-## Research-first scope
+## Scope
 
-The current task is research and prototype planning, not a completed implementation.
+Research is complete and a minimal agent-assisted pilot is now implemented.
 
 1. Compare existing open-source ingestion, skill-validation, and repository-explanation tools.
 2. Check the Agent Skills specification and reuse its existing discovery and progressive-disclosure conventions.
@@ -36,7 +36,10 @@ No framework, model provider, database, or multi-agent architecture is required 
 - Project brief recorded.
 - Initial tools and standards research completed by source inspection.
 - A pinned public skill has been examined as a partial worked example.
-- No extractor or runtime has been implemented or benchmarked yet.
+- Runnable static evidence capture, citation validation, and rendering are implemented.
+- Agent-assisted synthesis is defined in [SKILL.md](SKILL.md); the Python helper does not infer author intent.
+- 17 automated tests pass locally on Linux; this is not a quality benchmark or proof of semantic correctness.
+- [Run the pilot](docs/pilot.md).
 
 ## Research results
 
@@ -49,9 +52,9 @@ Start with Markdown and a source manifest. Optional Repomix ingestion and a skil
 
 **Illustrative finding:** the sampled webapp-testing skill prescribes networkidle, while current Playwright documentation discourages it for testing. A trustworthy explanation must retain the original instruction and show the conflict, rather than silently rewrite the skill.
 
-## Proposed next checkpoint
+## Evaluation checkpoint
 
-Create and review the explanatory output for one pinned public skill before automating extraction. Measure comprehension, citation fidelity, retrieval success, preserved conditions, and source immutability. This is a proposed next step, not a completed prototype.
+The first real-skill forward test is in progress. Measure citation fidelity, preserved conditions, source immutability, and whether the author recognises the proposed explanations. Mechanical tests cannot verify recovered intent. Keep unconfirmed personal interpretations out of public fixtures.
 
 ## License
 
