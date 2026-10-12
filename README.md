@@ -34,8 +34,24 @@ No framework, model provider, database, or multi-agent architecture is required 
 ## Status
 
 - Project brief recorded.
-- Tools and standards research in progress.
-- No extractor or runtime has been implemented or tested yet.
+- Initial tools and standards research completed by source inspection.
+- A pinned public skill has been examined as a partial worked example.
+- No extractor or runtime has been implemented or benchmarked yet.
+
+## Research results
+
+- [Open-source tools and reuse options](docs/research/tools.md)
+- [Standards, minimal design, worked example, and evaluation plan](docs/research/standards-and-design.md)
+
+**Recommendation:** keep the existing Agent Skills format. Use a small read-only inventory and original-file reader, then a human- or model-assisted evidence-grounded synthesis step. Render a human brief and agent reference from the same claims. Static parsing can verify paths and source spans; it cannot determine author intent or prove that an explanation is true.
+
+Start with Markdown and a source manifest. Optional Repomix ingestion and a skill validator may help; a wiki server, vector database, and Tree-sitter integration are not necessary until a real pilot demonstrates a need.
+
+**Illustrative finding:** the sampled webapp-testing skill prescribes networkidle, while current Playwright documentation discourages it for testing. A trustworthy explanation must retain the original instruction and show the conflict, rather than silently rewrite the skill.
+
+## Proposed next checkpoint
+
+Create and review the explanatory output for one pinned public skill before automating extraction. Measure comprehension, citation fidelity, retrieval success, preserved conditions, and source immutability. This is a proposed next step, not a completed prototype.
 
 ## License
 
