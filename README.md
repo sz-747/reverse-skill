@@ -54,7 +54,7 @@ Start with Markdown and a source manifest. Optional Repomix ingestion and a skil
 
 ## Evaluation checkpoint
 
-The first real-skill forward test is in progress. Measure citation fidelity, preserved conditions, source immutability, and whether the author recognises the proposed explanations. Mechanical tests cannot verify recovered intent. Keep unconfirmed personal interpretations out of public fixtures.
+The first real-skill forward test completed: 7 captured files, 19 source-cited claims, successful capture/validation/rendering, and no source changes. Citation corruption was rejected; an unrelated statement with valid quotations still passed mechanical validation, confirming that semantic review is essential. The source was instruction-rich, so this is a favorable single case rather than a general benchmark. Measure citation fidelity, preserved conditions, source immutability, and whether the author recognises the proposed explanations. Mechanical tests cannot verify recovered intent. Keep unconfirmed personal interpretations out of public fixtures.
 
 ## License
 
